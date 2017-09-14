@@ -27,3 +27,4 @@ We will try to update them as regularly as possible.
 * Dreamstar
 * wakaber
 * me?
+# android_device_samsung_mint2g
