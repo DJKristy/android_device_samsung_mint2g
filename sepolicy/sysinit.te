@@ -1,2 +1,0 @@
-allow sysinit rootfs:lnk_file { getattr };
-

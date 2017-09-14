@@ -1,7 +1,0 @@
-allow radio rild_sp:unix_stream_socket { connectto };
-
-###########
-# this line has a violation .
-#
-
-# allow radio socket_device:sock_file { write }; 

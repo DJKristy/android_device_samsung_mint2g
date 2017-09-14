@@ -1,8 +1,0 @@
-allow toolbox ram_device:blk_file rw_file_perms;
-allow toolbox init:fifo_file { write getattr };
-allow toolbox init:unix_stream_socket { connectto };
-allow toolbox device:dir { w_dir_perms };
-allow toolbox device:dir { write };
-allow toolbox device:lnk_file { create };
-allow toolbox system_prop:property_service { set };
-allow toolbox property_socket:sock_file { write };

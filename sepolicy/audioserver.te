@@ -1,8 +1,0 @@
-allow audioserver rootfs:lnk_file { getattr };
-allow audioserver init:unix_stream_socket { connectto };
-
-###########
-# this line has a violation .
-#
-
-# allow audioserver device:chr_file { read write open };

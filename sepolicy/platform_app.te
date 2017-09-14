@@ -1,2 +1,0 @@
-allow platform_app graphics_device:chr_file { write rw_file_perms };
-allow platform_app self:process ptrace;

@@ -1,2 +1,0 @@
-allow vold efs_file:dir r_dir_perms;
-

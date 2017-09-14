@@ -1,29 +1,4 @@
 allow init block_device:blk_file setattr;
 allow init self:capability sys_module;
 allow init self:process execmem;
-allow init self:netlink_kobject_uevent_socket { rw_socket_perms create };
-allow init kernel:system module_request;
-allow init sysfs:lnk_file create_file_perms;
-allow init tmpfs:lnk_file create_file_perms;
-allow init rootfs:lnk_file r_file_perms;
-allow init sysfs:lnk_file create_file_perms;
-allow init ram_device:blk_file write;
-allow init device:chr_file { unlink create };
-allow init devpts:chr_file {ioctl setattr getattr };
-allow init serial_device:chr_file { write ioctl };
-allow init socket_device:sock_file { setattr };
-allow init log_device:chr_file { write };
-
-#################
-### those lines have violations 
-#
-
-# allow init shell_data_file:file {  getattr read ioctl lock append write lock open };
-allow init shell_data_file:file {  getattr read ioctl lock append write lock};
-
-# allow init system_file:file { execute execmod execute_no_trans };
-allow init system_file:file { execute execmod };
-
-# allow init rootfs:file { execmod execute execute_no_trans };
-allow init rootfs:file { execmod execute };
 

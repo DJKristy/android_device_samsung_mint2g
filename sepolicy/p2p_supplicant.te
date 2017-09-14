@@ -1,4 +1,0 @@
-type p2p_supplicant, domain;
-type p2p_supplicant_exec, exec_type, file_type;
-
-init_daemon_domain(p2p_supplicant)

@@ -1,4 +1,0 @@
-type calibration_init, domain;
-type calibration_init_exec, exec_type, file_type;
-
-init_daemon_domain(calibration_init)
